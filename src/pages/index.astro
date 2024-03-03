@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hallo gais 👋</div>
+    <div class="text-5xl font-bold">I'm ooucholive</div>
+    <div class="text-3xl py-3 font-bold">Web Developer and Entrepreneur</div>
+    <div class="py-2">
+      <text class="text-lg">
+        Kenalin aku <b>Ooucholive</b> seorang Junior Web Developer dan desainer grafis dengan hasrat dalam menciptakan pengalaman digital yang menarik. Saya juga menjalankan bisnis kecil sebagai penjual laptop. Ayo berkolaborasi dan ciptakan sesuatu yang luar biasa bersama!
+        it useful!
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://www.instagram.com/livgraph/" target="_blank"> Let's connect!</a>
+      <a href="https://shopee.co.id/ooucholive" target="_blank" class="btn btn-outline ml-5">
+        Beli Laptop!
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Personal Resume"
+    img="/index1.webp"
+    desc="Ngerjain web resume buat seseorang, karena katanya pengen gitu akses resume tinggal buka web."
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Currency Converter"
+    img="/index2.webp"
+    desc="Iseng coba bikin currency converter ni, belajar bikin aplikasi mudah bukan? BUKAN!!!!."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Landing Page"
+    img="/index3.webp"
+    desc="Landing page itu cepet bikinya, masak sekelas toko/perusahan profesional jaman sekarang ga punya Web Landing, YANG BENER AJE! RUGI DONK!."
+    url="#"
+    badge="FOSS"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>

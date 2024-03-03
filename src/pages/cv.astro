@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    ooucholive, ya begitulah nickname yang aku klaim sendiri, karena aku punya panggilan dari teman temanku olive. Aku lulusan D3 Teknik Informatika di salah satu universitas swasta di Yogyakarta. Aku punya skill multimedia seperti membuat Logo, Flyer, Banner, etc. menggunakan tools Photoshop dan Illustrator. Aku juga paham bagaimana membuat website app, ya aku bisa buat website app, menggunakan Javascript, PHP. dan yang terakhir aku mau menyampaikan aku juga jualan laptop lho disini wkwk.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Teknik Komputer Jaringan"
+      subtitle="2014 to 207 at SMK Swasta Terbaik, Magelang, Indonesia"
+    />
+    <TimeLineElement
+      title="D3 Teknik Informatika"
+      subtitle="2017 to 2020 at Universitas bagus banget kata temenku yang kuliah di Unsiq, Yogyakarta, Indonesia"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Teknisi Komputer"
+      subtitle="From Desember 2020 to November 2022 at Toko Komputer Terbaik Wonosobo, Wonosobo, Indonesia"
+    >
+      Saya bekerja di salah satu toko komputer terbaik di Wonosobo sebagai Teknisi Komputer. Memperbaiki masalah terkait dengan Laptop, PC, Jaringan Printer maupun CCTV. saya sangat mahir perihal Troubleshooting Laptop dan Juga PC, untuk jaringan sendiri saya cukup memahami dasar dasar instalasi jaringan maupun cctv.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Digital Media Marketing"
+      subtitle="From November 2022 to Agustus 2023 at Toko Komputer Terbaik Wonosobo, Wonosobo, Indonesia"
+    >
+      Setelah cukup lama di divis Teknisi aku di pindah tugaskan menjadi Digital Media Marketing. Aku menghandle segala kebutuhan digital mulai dari konten social media, baik video maupun grafis, disisi lain aku juga menghandle marketplace seperti shopee dan juga tokopedia. juga tugas belajar untuk mensupport software developing untuk bagian Front-end. 
+    </TimeLineElement>
+    <TimeLineElement
+      title="IT Support - Laptop Specialist"
+      subtitle="Oktober 2023 to Now at Vendor Laptop, Jakarta, Indonesia"
+    >
+      Mengawasi dan menjaga laptop vendor yang digunakan untuk project call center startup Unicorn, memabntu mengatasi keluhan terkait laptop, maintenance dan juga perbaikan jika ada kendala terhadap laptop
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> I will get my First this year (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Belum ada bentar lagi mau kursus wkwk (with link)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Javascript</li>
+    <li>PHP</li>
+    <li>Front-End</li>
+    <li>Jago Main Bola</li>
+    <li>Illustrator</li>
+    <li>Photoshop</li>
+  </ul>
+</BaseLayout>
