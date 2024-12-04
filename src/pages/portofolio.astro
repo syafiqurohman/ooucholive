@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
@@ -49,3 +50,56 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     url="#"
   />
 </BaseLayout>
+=======
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Portofolio" sideBarActiveItemID="portofolio">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Web Dev</div>
+  </div>
+
+  <HorizontalCard
+    title="Landing Page"
+    img="/porto-landing.webp"
+    desc="lihat deh halaman keren yang udah kita buat! Desainnya nggak cuma keren, tapi juga bikin nyaman buat pengguna."
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Web Application"
+    img="/porto-app.webp"
+    desc=" Kita udah rancang biar penggunaannya lancar dan hemat waktu. Jadi, kalo butuh solusi digital yang nyaman, aplikasi web kita siap bantu!"
+    url="#"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Design Graphic</div>
+  </div>
+
+  <HorizontalCard
+    title="Logo"
+    img="/porto-logo.webp"
+    desc="Kombinasi desain yang unik sama nilai-nilai brand kamu, bikin logo kita beda dan ga bakal dilupain. Jadi, yuk, bangun identitas merek yang keren bareng kita!"
+    url="#"
+    badge="FOSS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Graphic"
+    img="/porto-graphic.webp"
+    desc="Dengan warna-warna yang eye-catching, tata letak yang bikin mata langsung klepek-klepek, dan pesan yang keren, bikin poster kita jadi pusat perhatian, deh!"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Jersey"
+    img="/porto-jersey.webp"
+    desc="Pastiin timmu jadi yang paling cetar pas main dengan jersey buatan kita! Desainnya nyaman dipake, fungsional, dan pastinya keren abis." 
+    url="#"
+  />
+</BaseLayout>
+>>>>>>> 0260f3cffc195ec318f8386238abcd43a78805c2

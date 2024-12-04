@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 User-agent: *
 Allow: /
 
+=======
+User-agent: *
+Allow: /
+
+>>>>>>> 0260f3cffc195ec318f8386238abcd43a78805c2
 Sitemap: https://astrofy-template.netlify.app/sitemap-index.xml

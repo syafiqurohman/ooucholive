@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
+=======
+.time-line-container>div:last-child .education__time>.education__line {
+    display: none;
+>>>>>>> 0260f3cffc195ec318f8386238abcd43a78805c2
 }

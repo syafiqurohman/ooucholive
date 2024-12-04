@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
@@ -12,4 +13,20 @@
       ]
     }
   }
+=======
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ]
+    }
+  }
+>>>>>>> 0260f3cffc195ec318f8386238abcd43a78805c2
 }
