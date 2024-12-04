@@ -1,7 +1,6 @@
-
 {
   "name": "ooucholive",
-  "description": "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.",
+  "description": "Welcome bro, here is my portofolio website, hope it helps found thing about me.",
   "type": "module",
   "version": "3.0.0",
   "private": true,
